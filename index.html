@@ -1,44 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello Jimmeh</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f6f8fa;
-      color: #222;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Integral Detection Technology LLC develops DNA-enabled detection technology for biosecurity, defense readiness, and critical infrastructure protection."
+    />
+    <title>Integral Detection Technology LLC</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-link" href="#home" aria-label="Integral Detection Technology home">
+        <img src="assets/IDTlogo.png" alt="Integral Detection Technology logo" />
+      </a>
 
-    .box {
-      text-align: center;
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    }
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#technology">Technology</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <h1>Hello Jimmeh</h1>
-    <p>Your first website is live.</p>
-  </div>
-</body>
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Biotech defense startup</p>
+          <h1 id="hero-title">Integral Detection Technology LLC</h1>
+          <p class="hero-copy">
+            DNA-enabled detection systems for biosecurity, defense readiness, and critical infrastructure protection.
+          </p>
+          <div class="hero-actions" aria-label="Page actions">
+            <a class="button primary" href="#technology">Explore Technology</a>
+            <a class="button secondary" href="#contact">Start a Conversation</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Detection focus">
+        <div>
+          <strong>Military &amp; Public Health Detection</strong>
+          <span>Agencies can make rapid, informed decisions regarding the safety of the masses.</span>
+        </div>
+        <div>
+          <strong>Ecological Detection</strong>
+          <span>Ecological monitoring of waterways improves upon current eDNA collection methods.</span>
+        </div>
+        <div>
+          <strong>DNA-Based Technology</strong>
+          <span>Practical, deployable tools built around molecular specificity.</span>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-content">
+          <p class="section-kicker">About</p>
+          <h2>Building detection capability for high-consequence biological threats.</h2>
+          <p>
+            Integral Detection Technology LLC is a biotech defense startup focused on improving how organizations
+            identify and respond to biological material in the field, in secure facilities, and across critical
+            operations.
+          </p>
+          <p>
+            The company brings molecular biology and practical system design together so decision makers can move
+            from uncertainty to informed action with greater speed and confidence.
+          </p>
+        </div>
+
+        <div class="focus-grid" aria-label="Company priorities">
+          <article class="focus-card">
+            <span class="card-label">01</span>
+            <h3>Military &amp; Public Health Detection</h3>
+            <p>Agencies can make rapid, informed decisions regarding the safety of the masses.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-label">02</span>
+            <h3>Ecological Detection</h3>
+            <p>Ecological monitoring of waterways improves upon current eDNA collection methods.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-label">03</span>
+            <h3>Biosecurity Response</h3>
+            <p>Actionable molecular insight for teams working under time-sensitive conditions.</p>
+          </article>
+        </div>
+
+        <div class="founders-section" aria-labelledby="founders-title">
+          <div class="section-content">
+            <p class="section-kicker">Our Founders</p>
+            <h2 id="founders-title">A team grounded in engineering, biology, and environmental science.</h2>
+          </div>
+
+          <div class="founders-grid">
+            <article class="founder-card">
+              <img class="founder-photo" src="assets/forest-siewert.jpg" alt="Forest Siewert standing near a research rocket" />
+              <div>
+                <h3>Forest Siewert</h3>
+                <p>Ph.D Candidate, Mechanical Engineering - University of Utah</p>
+                <p>B.S, Mechanical Engineering - California State University, Chico</p>
+              </div>
+            </article>
+            <article class="founder-card">
+              <img class="founder-photo" src="assets/vincent-evangelist.png" alt="Vincent Evangelist" />
+              <div>
+                <h3>Vincent Evangelist</h3>
+                <p>M.S Candidate, Biology - Eastern Washington University</p>
+                <p>B.S, Environmental Science - California State University, Chico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section technology-section" id="technology">
+        <div class="section-content narrow">
+          <p class="section-kicker">Technology</p>
+          <h2>DNA-based identification, engineered for practical detection environments.</h2>
+          <p>
+            IDT is developing technology centered on the specificity of DNA recognition and the realities of
+            deployment beyond a traditional laboratory. The goal is to support biological detection with tools that
+            are fast to interpret, defensible in their results, and adaptable to mission needs.
+          </p>
+        </div>
+
+        <figure class="technology-figure">
+          <img
+            src="assets/technology-graphical-abstract.png"
+            alt="Graphical abstract showing airborne threat detection, modular extraction, passive air intakes, DNA and RNA preparation, and rapid nanopore sequencing"
+          />
+        </figure>
+
+        <div class="technology-grid">
+          <article class="technology-card">
+            <h3>Targeted Recognition</h3>
+            <p>
+              Molecular approaches designed to distinguish biological signatures with precision and reduce ambiguity
+              during screening.
+            </p>
+          </article>
+          <article class="technology-card">
+            <h3>Integrated Workflow</h3>
+            <p>
+              Sample-to-answer thinking that connects preparation, detection, interpretation, and reporting into a
+              clear operational sequence.
+            </p>
+          </article>
+          <article class="technology-card">
+            <h3>Deployable Design</h3>
+            <p>
+              Systems shaped for the constraints of defense, security, and critical infrastructure settings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="section-kicker">Contact</p>
+          <h2>Connect with Integral Detection Technology.</h2>
+          <p>
+            For partnerships, research collaborations, government programs, or procurement conversations, reach out
+            to the IDT team.
+          </p>
+          <a class="button primary" href="mailto:contact@integraldetectiontechnology.com?subject=Integral%20Detection%20Technology%20Inquiry">
+            contact@integraldetectiontechnology.com
+          </a>
+        </div>
+
+        <form class="contact-form" action="mailto:contact@integraldetectiontechnology.com" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5"></textarea>
+          </label>
+          <button class="button secondary" type="submit">Send Inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Integral Detection Technology LLC. All rights reserved.</span>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector("#site-nav");
+
+      toggle.addEventListener("click", () => {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        nav.classList.toggle("is-open", !isOpen);
+      });
+
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          toggle.setAttribute("aria-expanded", "false");
+          nav.classList.remove("is-open");
+        });
+      });
+    </script>
+  </body>
 </html>
